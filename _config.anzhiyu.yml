@@ -131,7 +131,7 @@ katex:
 # --------------------------------------
 
 # Favicon（网站图标）
-favicon: /favicon.ico
+favicon: /blog/favicon.ico
 
 # Avatar (头像)
 avatar:
@@ -161,8 +161,8 @@ cover:
 
 # Replace Broken Images (替换无法显示的图片)
 error_img:
-  flink: /img/friend_404.gif
-  post_page: /img/404.jpg
+  flink: /blog/img/friend_404.gif
+  post_page: /blog/img/404.jpg
 
 # A simple 404 page
 error_404:
@@ -768,14 +768,9 @@ subtitle:
 # Loading Animation (加载动画)
 preloader:
   enable: true
-  # source
-  # 1. fullpage-loading
-  # 2. pace (progress bar)
-  # else all
-  source: 3
-  # pace theme (see https://codebyzach.github.io/pace/)
+  source: 2
   pace_css_url:
-  avatar: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg # 自定加载动画义头像
+  avatar: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg
 
 # aside (侧边栏)
 # --------------------------------------
