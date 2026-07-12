@@ -4,9 +4,9 @@
 
 # Site
 title: Crosery
-subtitle: '(｡･ω･｡)ﾉ♡'
-description: '一只爱碎碎念的日常记录员'
-keywords: C++, Python, AI, 算法, 代码, 博客, Hexo, ROS
+subtitle: '唯有那份炫目 未曾忘却'
+description: '(｡･ω･｡)ﾉ♡ 一只爱碎碎念的日常记录员，记录一些日常经验和生活~'
+keywords: C++, Python, AI, 算法, 代码, 博客, Butterfly, Hexo, ROS, 爬虫, 逆向
 author: Crosery
 language: zh-CN
 timezone: 'Asia/Shanghai'
@@ -30,6 +30,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - 'css/*'
 
 # Writing
 new_post_name: :title.md # File name of new posts
