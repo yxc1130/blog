@@ -1,0 +1,8 @@
+- class_name: 友情链接
+  class_desc: 与优秀创作者共同交流
+  flink_style: anzhiyu
+  link_list:
+    - name: Crosery
+      link: https://www.crosery.cn/
+      avatar: https://www.crosery.cn/favicon.ico
+      descr: 分享技术教程与开源项目的个人博客

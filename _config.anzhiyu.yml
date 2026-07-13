@@ -307,8 +307,8 @@ addtoany:
 
 comments:
   # Up to two comments system, the first will be shown as default
-  # Choose: Valine/Waline/Twikoo/Artalk
-  use: # Twikoo/Waline
+  # Choose: Valine/Waline/Twikoo/Artalk/Giscus
+  use: [Giscus]
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
@@ -370,17 +370,17 @@ artalk:
 # giscus
 # https://giscus.app/
 giscus:
-  repo: # GitHub repository name
-  repo_id: # GitHub repository id
-  category_id: # GitHub repository category id
+  repo: yxc1130/blog
+  repo_id: R_kgDOTWDR5A
+  category_id: DIC_kwDOTWDR5M4DBE3Z
   theme:
     light: light
     dark: dark
-  option: # options
+  option:
     data-lang: zh-CN
-    data-mapping:
-    data-category:
-    data-input-position:
+    data-mapping: pathname
+    data-category: Announcements
+    data-input-position: top
 
 # Chat Services
 # --------------------------------------
@@ -1059,10 +1059,10 @@ home_top:
     swiper_css: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.css
     swiper_js: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/swiper/swiper.min.js
   banner:
-    tips:
-    title:
-    image:
-    link:
+    tips: 个人主页
+    title: 关于 yxc
+    image: https://bu.dusays.com/2023/04/27/64496e511b09c.jpg
+    link: /about/
 
 # 朋友圈配置
 friends_vue:
