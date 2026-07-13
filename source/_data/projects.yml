@@ -1,0 +1,18 @@
+owner: yxc1130
+projects:
+  - repo: yxc1130/minecraft-java-survival
+    name: minecraft-java-survival
+    description: 单文件驱动的第一人称体素生存游戏，含程序化世界、挖掘建造、背包与本地存档。
+    topics:
+      - github-pages
+      - javascript
+      - survival-game
+      - threejs
+      - voxel-game
+      - webgl
+    source: https://github.com/yxc1130/minecraft-java-survival
+    updatedAt: '2026-07-13T03:10:22Z'
+    language: HTML
+    homepage: https://yxc1130.github.io/minecraft-java-survival/
+    title: Minecraft Java Survival
+    cover: https://raw.githubusercontent.com/yxc1130/minecraft-java-survival/main/assets/preview.png
