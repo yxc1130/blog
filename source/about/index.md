@@ -1,14 +1,20 @@
 ---
 title: 关于本人
 date: 2026-07-12 18:00:00
-type: about
+comments: false
 ---
 
-一只爱碎碎念的日常记录员，记录一些日常经验和生活~
+## 你好，我是 yxc
 
-- **编程语言**: C++, Python
-- **领域**: AI, 算法, ROS, 爬虫, 逆向
-- **博客框架**: Hexo + Anzhiyu
+一名持续学习与实践的开发者。这里记录技术笔记、项目过程，以及值得留下来的想法。
 
-Email: luoxi2024@foxmail.com
-GitHub: [yxc](https://github.com/yxc1130)
+## 技术方向
+
+- **编程语言**：C++、Python
+- **关注领域**：AI、算法、ROS、爬虫、逆向
+- **博客框架**：Hexo + Anzhiyu
+
+## 找到我
+
+- GitHub：[yxc1130](https://github.com/yxc1130)
+- Email：[luoxi2024@foxmail.com](mailto:luoxi2024@foxmail.com)
