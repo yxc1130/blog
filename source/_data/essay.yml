@@ -1,0 +1,8 @@
+- title: 随笔
+  subTitle: 记录正在发生的事
+  tips: 短一点，也值得留下来。
+  buttonText: 返回首页
+  buttonLink: /blog/
+  home_essay: false
+  limit: 20
+  essay_list: []

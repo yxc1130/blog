@@ -3,6 +3,7 @@ menu:
     隧道: /archives/ || anzhiyu-icon-box-archive
     分类: /categories/ || anzhiyu-icon-shapes
     标签: /tags/ || anzhiyu-icon-tags
+    随笔: /essay/ || anzhiyu-icon-lightbulb
 
   友链:
     友人帐: /link/ || anzhiyu-icon-link
@@ -10,7 +11,7 @@ menu:
 
   我的:
     音乐馆: /music/ || anzhiyu-icon-music
-    追番页: /bangumis/ || anzhiyu-icon-bilibili
+    项目集: /projects/ || anzhiyu-icon-code
     相册集: /album/ || anzhiyu-icon-images
 
   关于:

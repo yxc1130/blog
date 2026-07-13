@@ -50,3 +50,91 @@ figure.highlight {
   background: #6C5CE7 !important;
   color: #fff !important;
 }
+
+.projects-intro {
+  margin: 0 0 24px;
+  padding: 24px;
+  border: 1px solid var(--style-border);
+  border-radius: 8px;
+  background: var(--anzhiyu-card-bg);
+}
+
+.projects-intro h2 {
+  margin: 4px 0 8px;
+}
+
+.projects-intro p {
+  margin: 0;
+  color: var(--anzhiyu-secondtext);
+}
+
+.projects-kicker,
+.project-card-eyebrow {
+  color: var(--anzhiyu-main);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 380px));
+  gap: 16px;
+}
+
+.project-card {
+  overflow: hidden;
+  border: 1px solid var(--style-border);
+  border-radius: 8px;
+  background: var(--anzhiyu-card-bg);
+}
+
+.project-card-cover {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: var(--anzhiyu-secondbg);
+}
+
+.project-card-body {
+  padding: 18px;
+}
+
+.project-card-body h3 {
+  margin: 4px 0 6px;
+}
+
+.project-card-body > p {
+  margin: 0 0 12px;
+  color: var(--anzhiyu-secondtext);
+}
+
+.project-card-stack {
+  font-size: 0.9rem;
+}
+
+.project-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-card-actions a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid var(--style-border);
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.project-card-actions .project-card-primary {
+  border-color: var(--anzhiyu-main);
+  background: var(--anzhiyu-main);
+  color: var(--anzhiyu-white) !important;
+}
+
+.project-card-actions .project-card-secondary {
+  color: var(--anzhiyu-fontcolor) !important;
+}
