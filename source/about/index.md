@@ -11,4 +11,4 @@ type: about
 - **博客框架**: Hexo + Anzhiyu
 
 Email: luoxi2024@foxmail.com
-GitHub: [Crosery](https://github.com/Crosery)
+GitHub: [yxc](https://github.com/yxc1130)
