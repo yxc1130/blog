@@ -1,5 +1,15 @@
 owner: yxc1130
 projects:
+  - repo: yxc1130/blog
+    name: blog
+    description: 使用 Hexo 和 Anzhiyu 主题搭建的个人技术博客，记录 C++、Python、AI 与开发实践。
+    topics: []
+    source: https://github.com/yxc1130/blog
+    updatedAt: '2026-07-14T03:41:09Z'
+    include: true
+    language: JavaScript
+    homepage: https://yxc1130.github.io/blog/
+    title: 个人技术博客
   - repo: yxc1130/lumen-atelier
     name: lumen-atelier
     description: 本地运行的 AI 图像生成工作台，支持提示词、参考图与连续创作。

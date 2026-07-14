@@ -41,7 +41,7 @@ function buildProjectCatalog({ owner, repositories, existing = {} }) {
         && !repository.fork
         && !repository.archived
         && !repository.disabled
-        && repository.full_name !== `${owner}/blog`;
+        && (repository.full_name !== `${owner}/blog` || isCurated);
     })
     .map(repository => {
       const previous = previousProjects.get(repository.full_name) ?? {};

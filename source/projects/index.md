@@ -16,6 +16,18 @@ comments: false
   <article class="project-card">
     <div class="project-card-body">
       <p class="project-card-eyebrow">GitHub 项目</p>
+      <h3>个人技术博客</h3>
+      <p class="project-card-stack">JavaScript</p>
+      <p>使用 Hexo 和 Anzhiyu 主题搭建的个人技术博客，记录 C++、Python、AI 与开发实践。</p>
+      <div class="project-card-actions">
+        <a class="project-card-primary" href="https://yxc1130.github.io/blog/" target="_blank" rel="noopener">在线访问</a>
+        <a class="project-card-secondary" href="https://github.com/yxc1130/blog" target="_blank" rel="noopener">查看源码</a>
+      </div>
+    </div>
+  </article>
+  <article class="project-card">
+    <div class="project-card-body">
+      <p class="project-card-eyebrow">GitHub 项目</p>
       <h3>Lumen Atelier</h3>
       <p class="project-card-stack">JavaScript</p>
       <p>本地运行的 AI 图像生成工作台，支持提示词、参考图与连续创作。</p>

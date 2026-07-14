@@ -38,6 +38,31 @@ test('buildProjectCatalog keeps only finished public showcase repositories', () 
   assert.deepEqual(catalog.projects.map(project => project.repo), ['yxc1130/voxel-world']);
 });
 
+test('buildProjectCatalog includes an explicitly curated blog repository', () => {
+  const catalog = buildProjectCatalog({
+    owner: 'yxc1130',
+    existing: {
+      projects: [{
+        repo: 'yxc1130/blog',
+        include: true,
+        title: '个人技术博客',
+        description: '使用 Hexo 和 Anzhiyu 主题搭建的个人技术博客。',
+        homepage: 'https://yxc1130.github.io/blog/',
+      }],
+    },
+    repositories: [repository({
+      name: 'blog',
+      full_name: 'yxc1130/blog',
+      description: '个人技术博客 - Hexo + Anzhiyu 主题',
+      homepage: '',
+      html_url: 'https://github.com/yxc1130/blog',
+    })],
+  });
+
+  assert.deepEqual(catalog.projects.map(project => project.repo), ['yxc1130/blog']);
+  assert.equal(catalog.projects[0].homepage, 'https://yxc1130.github.io/blog/');
+});
+
 test('buildProjectCatalog includes a curated public repository without the showcase topic', () => {
   const catalog = buildProjectCatalog({
     owner: 'yxc1130',
