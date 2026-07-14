@@ -29,10 +29,13 @@ function buildProjectCatalog({ owner, repositories, existing = {} }) {
 
   const projects = repositories
     .filter(repository => {
+      const previous = previousProjects.get(repository.full_name) ?? {};
       const hasShowcaseTopic = (repository.topics ?? []).some(topic => topic.toLowerCase() === SHOWCASE_TOPIC);
-      const hasDescription = typeof repository.description === "string" && repository.description.trim().length > 0;
+      const isCurated = previous.include === true;
+      const description = previous.description || repository.description;
+      const hasDescription = typeof description === "string" && description.trim().length > 0;
 
-      return hasShowcaseTopic
+      return (hasShowcaseTopic || isCurated)
         && hasDescription
         && !repository.private
         && !repository.fork
@@ -51,8 +54,10 @@ function buildProjectCatalog({ owner, repositories, existing = {} }) {
         updatedAt: repository.pushed_at,
       };
 
+      if (previous.include === true) project.include = true;
       if (repository.language) project.language = repository.language;
       if (isHttpUrl(repository.homepage)) project.homepage = repository.homepage;
+      else if (isHttpUrl(previous.homepage)) project.homepage = previous.homepage;
       if (previous.title) project.title = previous.title;
       if (isHttpUrl(previous.cover)) project.cover = previous.cover;
 

@@ -38,6 +38,61 @@ test('buildProjectCatalog keeps only finished public showcase repositories', () 
   assert.deepEqual(catalog.projects.map(project => project.repo), ['yxc1130/voxel-world']);
 });
 
+test('buildProjectCatalog includes a curated public repository without the showcase topic', () => {
+  const catalog = buildProjectCatalog({
+    owner: 'yxc1130',
+    existing: {
+      projects: [{
+        repo: 'yxc1130/lumen-atelier',
+        include: true,
+        title: 'Lumen Atelier',
+        description: '本地运行的 AI 图像生成工作台。',
+      }],
+    },
+    repositories: [repository({
+      name: 'lumen-atelier',
+      full_name: 'yxc1130/lumen-atelier',
+      description: 'A local AI image workspace.',
+      topics: ['javascript'],
+      homepage: '',
+      html_url: 'https://github.com/yxc1130/lumen-atelier',
+    })],
+  });
+
+  assert.deepEqual(catalog.projects, [{
+    repo: 'yxc1130/lumen-atelier',
+    name: 'lumen-atelier',
+    include: true,
+    title: 'Lumen Atelier',
+    description: '本地运行的 AI 图像生成工作台。',
+    language: 'JavaScript',
+    topics: ['javascript'],
+    source: 'https://github.com/yxc1130/lumen-atelier',
+    updatedAt: '2026-07-13T04:00:00Z',
+  }]);
+});
+
+test('buildProjectCatalog preserves a curated homepage when GitHub has none', () => {
+  const catalog = buildProjectCatalog({
+    owner: 'yxc1130',
+    existing: {
+      projects: [{
+        repo: 'yxc1130/yxc1130.github.io',
+        include: true,
+        homepage: 'https://yxc1130.github.io/',
+      }],
+    },
+    repositories: [repository({
+      name: 'yxc1130.github.io',
+      full_name: 'yxc1130/yxc1130.github.io',
+      homepage: '',
+      html_url: 'https://github.com/yxc1130/yxc1130.github.io',
+    })],
+  });
+
+  assert.equal(catalog.projects[0].homepage, 'https://yxc1130.github.io/');
+});
+
 test('buildProjectCatalog preserves a curated cover and normalizes GitHub data', () => {
   const catalog = buildProjectCatalog({
     owner: 'yxc1130',
