@@ -104,5 +104,7 @@ theme: anzhiyu
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/yxc1130/blog.git
-  branch: gh-pages
+  repo:
+    url: https://github.com/yxc1130/blog.git
+    branch: gh-pages
+    token: $GITHUB_TOKEN

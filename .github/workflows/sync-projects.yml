@@ -2,7 +2,7 @@ name: Sync project showcase
 
 on:
   schedule:
-    - cron: "17 */6 * * *"
+    - cron: "17 0 */3 * *"
   workflow_dispatch:
 
 permissions:
@@ -56,5 +56,12 @@ jobs:
       - name: Generate site after source commit
         run: npm run build
 
+      - name: Configure Git identity for deployment
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
       - name: Publish GitHub Pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run deploy
