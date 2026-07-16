@@ -5,7 +5,7 @@ projects:
     description: 使用 Hexo 和 Anzhiyu 主题搭建的个人技术博客，记录 C++、Python、AI 与开发实践。
     topics: []
     source: https://github.com/yxc1130/blog
-    updatedAt: '2026-07-14T03:41:09Z'
+    updatedAt: '2026-07-14T04:07:39Z'
     include: true
     language: JavaScript
     homepage: https://yxc1130.github.io/blog/
